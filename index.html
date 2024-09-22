@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Responsive</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </nav>
+        <button id="sidenav" onclick="show()">open</button>
+    </header>
+    <nav class="sidebar" id="side">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <button id="close" onclick="closelement()">close</button>
+    </nav>
+    <aside>
+        <ul>
+            <li><a href="#">Blog 1</a></li>
+            <li><a href="#">Blog 2</a></li>
+            <li><a href="#">Blog 3</a></li>
+            <li><a href="#">Blog 4</a></li>
+        </ul>
+    </aside>
+    <main>
+        <article>
+            <h1>Blog 1</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing eaque nobis ad blanditiis id aperiam, laudantium qui eligendi tempore eveniet quae fugit omnis!</p>
+        </article>
+        <article>
+            <h1>Blog 2</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam at aut exercitationem, repudiandae deserunt ullam ut eaque nobis ad blanditiis id aperiam, laudantium qui eligendi tempore eveniet quae fugit omnis!</p>
+        </article>
+        <article>
+            <h1>Blog 3</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam at aut exercitationem, repudiandae deserunt ullam ut eaque nobis ad blanditiis id aperiam, laudantium qui eligendi tempore eveniet quae fugit omnis!</p>
+        </article>
+        <article>
+            <h1>Blog 4</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam at aut exercitationem, repudiandae deserunt ullam ut eaque nobis ad blanditiis id aperiam, laudantium qui eligendi tempore eveniet quae fugit omnis!</p>
+        </article>
+    </main>
+    <footer>
+        <p>@ copyright, reserved by Learnzhub Development</p>
+    </footer>
+
+
+
+    <script>
+        function show() {
+            document.getElementById("side").style.display = "block"
+        }
+
+        function closelement() {
+            document.getElementById("side").style.display = "none"
+        }
+    </script>
+</body>
+</html>
